@@ -1,0 +1,1 @@
+print("Nilai \x66\x61\x50")
