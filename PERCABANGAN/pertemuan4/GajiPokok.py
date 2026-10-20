@@ -10,11 +10,11 @@ pendidikan = input("Pendidikan (SMA/D1/D3/S1): ").upper()
 jam_kerja = int(input("Jumlah Jam Kerja    : "))
 
 if golongan == 1:
-    persen_jabatan = 5
+    persen_jabatan = 5 * gaji_pokok
 elif golongan == 2:
-    persen_jabatan = 10
+    persen_jabatan = 10 * gaji_pokok
 elif golongan == 3:
-    persen_jabatan = 15
+    persen_jabatan = 15 * gaji_pokok
 else:
     persen_jabatan = 0
     print("Golongan tidak valid!")
@@ -22,13 +22,13 @@ else:
 tunjangan_jabatan = gaji_pokok * persen_jabatan / 100
 
 if pendidikan == "SMA":
-    persen_pendidikan = 2.5
+    persen_pendidikan = 2.5 * gaji_pokok
 elif pendidikan == "D1":
-    persen_pendidikan = 5
+    persen_pendidikan = 5 * gaji_pokok
 elif pendidikan == "D3":
-    persen_pendidikan = 20
+    persen_pendidikan = 20 * gaji_pokok
 elif pendidikan == "S1":
-    persen_pendidikan = 30
+    persen_pendidikan = 30 * gaji_pokok
 else:
     persen_pendidikan = 0
     print("Pendidikan tidak valid!")
